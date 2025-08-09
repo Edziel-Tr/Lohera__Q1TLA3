@@ -5,216 +5,70 @@
 }
 
 body {
-    background-color: #541554;
-    color: #fff;
-    min-height: 100vh;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 48px;
-    height: 90px;
-    background: #541554;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo img {
-    width: 40px;
-    height: 40px;
-}
-
-.logo span {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #fff;
-    letter-spacing: 1px;
-    text-transform: lowercase;
-    margin-left: 8px;
-}
-
-.first ul {
-    display: flex;
-    gap: 32px;
-    list-style: none;
-}
-
-.first ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: color 0.2s;
-}
-
-.second {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-}
-
-.second .signin {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.05rem;
-    padding: 8px 16px;
-    border-radius: 20px;
-    transition: background 0.2s, color 0.2s;
+    font-family: Arial, sans-serif;
+    background-color: white;
 }
 
 
-.second .talk {
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 8px;
-    padding: 8px 22px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.05rem;
-    background: transparent;
-    transition: background 0.2s, color 0.2s;
-}
-
-.second .tryfree {
-    background: #fff;
-    color: #541554;
-    border-radius: 8px;
-    padding: 8px 22px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.05rem;
-    border: none;
-    transition: background 0.2s, color 0.2s;
+.test {
+    height: 10vh;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border: 2px solid black;
+    line-height: 10vh;
+    font-size: 2em;
 }
 
 
-
-main {
-    max-width: 700px;
-    margin: 60px 0 0 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.container {
+    text-align: center; 
+    font-size: 0; 
+    margin: 2vw 0;
+}
+ 
+.aside1, .art, .aside2 {
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    box-sizing: border-box;
 }
 
-.main-title {
-    font-size: 4rem;
-    font-weight: 900;
-    line-height: 1.1;
-    margin-bottom: 16px;
+.aside1, .aside2 {
+    width: 15vw;
+    min-width: 100px;
+    padding: 2vw 0;
 }
 
-.main-title span {
-    color: #ecb22e;
-    display: block;
-}
-
-.note1 {
-    font-size: 1.4rem;
-    color: #fff;
-    margin-bottom: 38px;
-    font-weight: 400;
-    max-width: 600px;
-}
-
-.buttones {
-    display: flex;
-    gap: 18px;
-    margin-bottom: 24px;
-}
-
-.email {
-    background: #fff;
-    color: #541554;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    padding: 18px 32px;
-    cursor: pointer;
-    transition: background 0.2s;
+.art {
+    width: calc(70vw - 4vw); 
+    padding: 2vw;
 }
 
 
-.google {
-    background: #4285f4;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    padding: 18px 32px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: background 0.2s;
+.foot {
+    height: 7vh;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border: 2px solid black;
+    line-height: 7vh;
+    font-size: 1.2em;
+    margin-top: 2vw;
 }
 
-.google img {
-    width: 24px;
-    height: 24px;
-    background: #fff;
-    border-radius: 4px;
-    padding: 2px;
-}
-
-
-.note2 {
-    color: #fff;
-    font-size: 1.1rem;
-    margin-top: 8px;
-}
-
-.note2 {
-    color: #fff;
-    font-weight: 700;
-}
-
-@media (max-width: 900px) {
-    header {
-        flex-direction: column;
+@media screen and (max-width: 1000px) {
+    .aside1, .art, .aside2 {
+        display: block;
+        width: 100%;
+        margin: 2vw 0;
+    }
+    .test, .foot {
         height: auto;
-        padding: 20px;
-        gap: 16px;
-    }
-
-    .first ul {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    main {
-        margin: 30px 10px 0 10px;
-        max-width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-
-    .main-title {
-        font-size: 2.2rem;
-    }
-
-    .note1 {
-        font-size: 1rem;
-    }
-
-    .buttones {
-        flex-direction: column;
-        gap: 12px;
-        width: 100%;
-    }
-
-    .email,
-    .google {
-        width: 100%;
-        justify-content: center;
+        line-height: normal;
+        font-size: 1.2em;
+        padding: 2vw 0;
     }
 }
